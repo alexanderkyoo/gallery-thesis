@@ -52,16 +52,12 @@ function PaintingCard({ painting, onClick }) {
 			fontSize: '1.125rem',
 			marginBottom: '0.5rem',
 			whiteSpace: 'nowrap',
-			overflow: 'hidden',
-			textOverflow: 'ellipsis',
 		},
 		author: {
 			fontSize: '1rem',
 			color: '#4b5563',
 			marginBottom: '0.25rem',
 			whiteSpace: 'nowrap',
-			overflow: 'hidden',
-			textOverflow: 'ellipsis',
 		},
 		year: {
 			fontSize: '0.875rem',

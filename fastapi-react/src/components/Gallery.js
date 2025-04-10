@@ -10,7 +10,6 @@ function Gallery({
 	hasNext,
 	hasPrevious,
 	currentIndex,
-	totalPaintings,
 	paintingsCache
 }) {
 	useEffect(() => {
@@ -163,12 +162,8 @@ function Gallery({
 					onClick={onNext}
 					disabled={!hasNext}
 					style={styles.button(hasNext)}
-					onMouseOver={(e) => {
-						if (hasNext) e.target.style.color = '#3b82f6';
-					}}
-					onMouseOut={(e) => {
-						if (hasNext) e.target.style.color = '#374151';
-					}}
+					onMouseOver={(e) => {if (hasNext) e.target.style.color = '#3b82f6';}}
+					onMouseOut={(e) => {if (hasNext) e.target.style.color = '#374151';}}
 					aria-label="Next"
 				>
 					&gt;
