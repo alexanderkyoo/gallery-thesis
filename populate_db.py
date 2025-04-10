@@ -350,7 +350,6 @@ def populate_object_pairings():
     cur.close()
     conn.close()
 
-
 def count_rows(table_name):
     conn, _ = connect()
     cur = conn.cursor()
@@ -359,7 +358,6 @@ def count_rows(table_name):
     cur.close()
     conn.close()
     return count
-
     
 if __name__ == "__main__":
     # print("Counting rows in 'painting' before clearing...")
